@@ -1,7 +1,13 @@
+import { Button } from "antd";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 const ErrorPage = () => {
+  const router = useRouter();
+  setTimeout(() => {
+    router.push("/");
+  }, 10000);
   return (
     <div>
       <img
@@ -17,12 +23,13 @@ const ErrorPage = () => {
         alt="404"
       />
       <Link href={"/"}>
-        <button
+        <Button
+          type="primary"
           className="btn btn-ghost"
           style={{ position: "absolute", top: "50vh", right: "50vw" }}
         >
           Go Home
-        </button>
+        </Button>
       </Link>
     </div>
   );
