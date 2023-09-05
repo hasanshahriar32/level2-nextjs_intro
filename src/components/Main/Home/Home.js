@@ -30,7 +30,7 @@ const items = [
   ]),
   getItem("Files", "9", <FileOutlined />),
 ];
-const Home = () => {
+const Home = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
@@ -81,7 +81,7 @@ const Home = () => {
               background: colorBgContainer,
             }}
           >
-            Bill is a cat.
+            {children}
           </div>
         </Content>
         <Footer

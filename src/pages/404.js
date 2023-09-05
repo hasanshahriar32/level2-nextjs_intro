@@ -1,4 +1,5 @@
 import { Button } from "antd";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -7,10 +8,13 @@ const ErrorPage = () => {
   const router = useRouter();
   setTimeout(() => {
     router.push("/");
-  }, 10000);
+  }, 4000);
   return (
     <div>
-      <img
+      <Image
+        height={500}
+        width={500}
+        alt="404"
         style={{
           height: "100vh",
           objectFit: "cover",
@@ -20,16 +24,15 @@ const ErrorPage = () => {
           width: "100%",
         }}
         src="https://www.artzstudio.com/content/images/wordpress/2020/05/404-error-not-found-page-lost.png"
-        alt="404"
       />
       <Link href={"/"}>
-        <Button
+        {/* <Button
           type="primary"
           className="btn btn-ghost"
           style={{ position: "absolute", top: "50vh", right: "50vw" }}
         >
           Go Home
-        </Button>
+        </Button> */}
       </Link>
     </div>
   );
