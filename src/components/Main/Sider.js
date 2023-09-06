@@ -45,7 +45,7 @@ const SiderComponent = () => {
         <Menu
           theme="dark"
           mode="vertical"
-          style={{ height: "100vh" }}
+          style={{ minHeight: "90vh" }}
           defaultSelectedKeys={["1"]}
         >
           {items.map((item) => {
