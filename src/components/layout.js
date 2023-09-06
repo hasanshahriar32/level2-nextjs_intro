@@ -8,7 +8,9 @@ export default function MainLayout({ children }) {
       }}
     >
       <SiderComponent />
-      <main>{children}</main>
+      <main className="" style={{ width: "100%" }}>
+        {children}
+      </main>
     </Layout>
   );
 }

@@ -42,7 +42,12 @@ const SiderComponent = () => {
     <div>
       <Sider collapsible collapsed={collapsed} onCollapse={setCollapsed}>
         <div className="demo-logo-vertical" />
-        <Menu theme="dark" mode="vertical" defaultSelectedKeys={["1"]}>
+        <Menu
+          theme="dark"
+          mode="vertical"
+          style={{ height: "100vh" }}
+          defaultSelectedKeys={["1"]}
+        >
           {items.map((item) => {
             if (item.children) {
               return (
