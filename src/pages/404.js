@@ -12,6 +12,7 @@ const ErrorPage = () => {
   return (
     <div>
       <Image
+        // layout="responsive"
         height={500}
         width={500}
         alt="404"
