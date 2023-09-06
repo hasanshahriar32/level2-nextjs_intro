@@ -8,7 +8,7 @@ const ErrorPage = () => {
   const router = useRouter();
   setTimeout(() => {
     router.push("/");
-  }, 4000);
+  }, 2700);
   return (
     <div>
       <Image
@@ -24,7 +24,8 @@ const ErrorPage = () => {
           alignItems: "center",
           width: "100%",
         }}
-        src="https://www.artzstudio.com/content/images/wordpress/2020/05/404-error-not-found-page-lost.png"
+        src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGswZms0eWprdjh0a2hvemxwdGh4a3dmaGx5NGpweG5nOGV6M2o4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5xaOcLyjXRo4hX5UhSU/giphy.gif"
+        // src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXVuaXNqbDNkeTRrbnpzNWxpdzVrOHl0M3JkcnNsMHJycnJxbGRsNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dHM/y1aX1Pbnd0H95Ka3LB/giphy.gif"
       />
       <Link href={"/"}>
         {/* <Button
