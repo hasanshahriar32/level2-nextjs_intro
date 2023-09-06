@@ -1,12 +1,12 @@
-import Layout from "@/components/layout";
+import MainLayout from "@/components/layout";
 import React from "react";
 
 const Newses = () => {
-  return <div></div>;
+  return <div>this is the news section</div>;
 };
 
 export default Newses;
 
 Newses.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <MainLayout>{page}</MainLayout>;
 };
